@@ -1,0 +1,29 @@
+POST http://localhost:5000/api/employees/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzY5NTA1Mzk0fQ.kTXlEUE8KABeIrU63FBhw3ALjkBPHtfaFOwmXfJknS4
+
+{
+  "firstname": "Nadine",
+  "lastname": "Izabayo",
+  "national_id": "11999887766",
+  "phone": "0781234567",
+  "email": "nadine@gmail.com",
+  "department": "IT",
+  "position": "Developer",
+  "manufacturer": "HP",
+  "model": "EliteBook",
+  "serial_number": "HP12345"
+}
+
+#######
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@gmail.com",
+  "password": "123456"
+}
+
+####
+GET http://localhost:5000/api/employees/employees
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzY5NTA1Mzk0fQ.kTXlEUE8KABeIrU63FBhw3ALjkBPHtfaFOwmXfJknS4

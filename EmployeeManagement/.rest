@@ -1,0 +1,10 @@
+# GET request
+curl http://localhost:5000/api/auth/login
+
+# POST request
+curl -X POST http://localhost:5000/api/auth/login \
+-H "Content-Type: application/json" \
+-d "{
+  "email": "admin@gmail.com",
+  "password": "123456",
+}"
