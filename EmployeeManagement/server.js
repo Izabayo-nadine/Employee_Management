@@ -13,22 +13,45 @@ app.use("/api/auth", require("./controller/auth"));
 app.use("/api/employees",require("./controller/employees"));
 
 
-const swaggerOptions={
-    swaggerDefinition:{
-        openapi:"3.0.0",
-        info:{
-            title:"Employee Management API",
-            version:"1.0.0",
-            description:"API for managing employees with authentication"
-        },
-        servers:[
-            {
-                url:"http://localhost:5000"
-            }
-        ]
+const swaggerOptions = {
+  definition: {
+    openapi: "3.0.0",
+
+    info: {
+      title: "Employee Management API",
+      version: "1.0.0",
+      description: "API for managing employees with authentication",
     },
-    apis:["./controller/*.js"]
+
+    servers: [
+      {
+        url: "http://localhost:5000",
+      },
+    ],
+
+    // 👇 ADD THIS PART
+    components: {
+      securitySchemes: {
+        bearerAuth: {
+          type: "http",
+          scheme: "bearer",
+          bearerFormat: "JWT",
+        },
+      },
+    },
+
+    // 👇 GLOBAL SECURITY
+    security: [
+      {
+        bearerAuth: [],
+      },
+    ],
+  },
+
+  apis: ["./controller/*.js"],
 };
+
+
 
 const swaggerDocs=swaggerDoc(swaggerOptions);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));

@@ -57,6 +57,7 @@ router.post("/signup", async (req, res) => {
   );
 });
 
+
 /**
  * @swagger
  * /api/auth/login:
