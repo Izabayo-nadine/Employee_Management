@@ -1,0 +1,82 @@
+.emp-container{
+    background-color: white;
+    border: 2px solid rgb(255,255,255);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    height: 500px;
+    width: 450px;
+    margin: auto; /* Center the container */
+    margin-top: 5rem;
+    box-shadow:  0 8px 8px 0 rgba(73, 73, 73, 0.1);
+}
+
+.num input{
+    padding: 10px;
+    margin-right: 10px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+
+.emp-container input{
+    margin-bottom: 10px;
+}
+
+#email{
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+
+#fname, #lname{
+    
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+.dp input{
+    padding: 10px;
+    margin-right: 10px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+
+.mm input{
+    padding: 10px;
+    margin-right: 10px;
+    width: 150px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+
+#sn{
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+
+.emp-container button{
+    padding: 10px;
+    color: white;
+    background-color: rgb(113, 113, 236);
+    border: none;
+    border-radius: 5px;
+}
+
+
+

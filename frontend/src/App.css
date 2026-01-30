@@ -1,0 +1,12 @@
+.main-container {
+  text-align: center;
+  
+}
+
+.main-container button{
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
